@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo -n ' enter the no .of states:';
+read exp_name;        
+
+# here exp_name indicates the number of states
+
+mixtures=16;
+
+#creating hmm folders
+mkdir ./HMM_trained_model_state_$exp_name
+for((i=0;i<=$mixtures;i++))
+do
+mkdir ./HMM_trained_model_state_$exp_name/hmm$i
+done
+
+cat ./mix_1.hed | sed s/MU\ 1/MU\ 2/g | sed  's/state\[2\]/state\[2-8\]/g' >  ./HMM_trained_model_state_$exp_name/mix_2.hed
+
+for((i=3;i<=$mixtures;i++))
+do
+cat ./HMM_trained_model_state_$exp_name/mix_$((i-1)).hed | sed s/MU\ $((i-1))/MU\ $i/g  > ./HMM_trained_model_state_$exp_name/mix_$i.hed
+done
+
+#Calculating the global mean and the variance according to the proto given
+#rm ./HMM_trained_model_state_$exp_name/hmm*/*
+HCompV -T 1 -D -A -C ./analysis_train.conf -I ./train.mlf -f 0.01 -m -S ./train.list -M ./HMM_trained_model_state_$exp_name/hmm0 ./proto.txt
+
+

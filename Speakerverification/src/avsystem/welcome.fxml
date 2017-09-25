@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="840.0" style="-fx-background-color: #4d6866;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avsystem.Welcome">
+   <children>
+      <ToggleButton fx:id="stop" layoutX="332.0" layoutY="348.0" mnemonicParsing="false" onAction="#startrec" prefHeight="35.0" prefWidth="181.0" style="-fx-background-color: #79889d;" text="Start Recording" textFill="WHITE">
+         <font>
+            <Font name="Free Sans Bold" size="13.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ToggleButton>
+      <ImageView fitHeight="160.0" fitWidth="170.0" layoutX="25.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/home/zzzz/NetBeansProjects/AVSYSTEM/pic/0532fd4.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="18.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: #536a75;" textFill="WHITE" />
+      <Label layoutX="29.0" layoutY="82.0" prefHeight="41.0" prefWidth="157.0" text="AVPID" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Norasi" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="81.0" prefHeight="41.0" prefWidth="181.0" text="System" textAlignment="JUSTIFY" textFill="#ff6700">
+         <font>
+            <Font name="Rekha" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="114.0" prefHeight="15.0" prefWidth="303.0" text="Audio_Visual Based Attendance Marker." textFill="WHITE">
+         <font>
+            <Font name="Garuda Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="163.0" prefHeight="24.0" prefWidth="497.0" text="Thank you for choosing to register with us!" textFill="#d47900">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="188.0" prefHeight="146.0" prefWidth="696.0" style="-fx-background-color: ;" text="We will now record your voice samples. The system will ask you to read a few sentences. Remember this sequence will be repeated four times to get natural samples of your voice. Please be patient while registering." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="KacstOne Bold" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

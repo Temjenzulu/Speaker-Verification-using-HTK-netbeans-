@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="avsystem.Capture">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="638.0" prefWidth="840.0" style="-fx-background-color: #4d6866;">
+         <children>
+            <ToggleButton fx:id="stop" layoutX="601.0" layoutY="561.0" mnemonicParsing="false" onAction="#finish" prefHeight="35.0" prefWidth="117.0" style="-fx-background-color: #ff0000;" text="Stop" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#353743" />
+               </effect>
+            </ToggleButton>
+            <ImageView fitHeight="160.0" fitWidth="170.0" layoutX="25.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/home/zzzz/NetBeansProjects/AVSYSTEM/pic/0532fd4.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="18.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: #536a75;" textFill="WHITE" />
+            <Label layoutX="29.0" layoutY="82.0" prefHeight="41.0" prefWidth="157.0" text="AVPID" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Norasi" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="111.0" layoutY="81.0" prefHeight="41.0" prefWidth="181.0" text="System" textAlignment="JUSTIFY" textFill="#ff6700">
+               <font>
+                  <Font name="Rekha" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="114.0" prefHeight="15.0" prefWidth="303.0" text="Audio_Visual Based Verification." textFill="WHITE">
+               <font>
+                  <Font name="Garuda Bold" size="13.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="record" contentDisplay="CENTER" layoutX="360.0" layoutY="562.0" mnemonicParsing="false" onAction="#record" pickOnBounds="false" prefHeight="35.0" prefWidth="117.0" selected="true" style="-fx-background-color: #9eaba9;" text="Record" textFill="#178eb5">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup111" />
+               </toggleGroup>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ToggleButton>
+            <Label layoutX="199.0" layoutY="291.0" prefHeight="25.0" prefWidth="509.0" style="-fx-background-color: #1588b1;" text=" Statement 1" textFill="WHITE">
+               <font>
+                  <Font size="12.0" fx:id="x11111" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="310.0" prefHeight="35.0" prefWidth="509.0" style="-fx-background-color: #1588b1;" text="    'Allow me to login my system'." textFill="WHITE">
+               <font>
+                  <Font size="28.0" fx:id="x11112" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="185.0" prefHeight="35.0" prefWidth="484.0" text="You have selected Statement1:" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="253.0" layoutY="221.0" prefHeight="30.0" prefWidth="431.0" text="Please record and then verify." textFill="#00ff95bd">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="recordPane" layoutX="263.0" layoutY="416.0" prefHeight="116.0" prefWidth="289.0" />
+            <ToggleButton fx:id="camera" contentDisplay="CENTER" layoutX="134.0" layoutY="564.0" mnemonicParsing="false" onAction="#camera" pickOnBounds="false" prefHeight="35.0" prefWidth="117.0" selected="true" style="-fx-background-color: #9eaba9;" text="Camera" textFill="#178eb5">
+               <font>
+                  <Font name="DejaVu Serif Condensed Bold" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup1111" />
+               </toggleGroup>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ToggleButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
