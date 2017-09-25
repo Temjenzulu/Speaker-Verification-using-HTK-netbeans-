@@ -1,5 +1,6 @@
 # Speaker-Verification-using-HTK-netbeans-
-A java based GUI for Speaker Recognition System using HTK.
+# Author Temjenzulu-
+ A java based GUI for Speaker Recognition System using HTK.
  --First install HTK on ubuntu
  --Install Netbeans with latest Java and Scene Builder.
  -- Change the working Directory in the java codes and in the shell scripts.
